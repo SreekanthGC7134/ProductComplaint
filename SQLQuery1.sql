@@ -1,0 +1,1 @@
+﻿SELECT * from tbl_login where user_name='Sreekanth' and login_password='111'

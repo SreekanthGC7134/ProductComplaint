@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Guest1.master.cs" Inherits="Honda.Guest.Guest1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <style>
+        nav
+        {
+            background-color:orangered;
+            height:50px;
+        }
+        nav ul{
+            text-align:center;
+        }
+        nav li{
+            display:inline;
+            margin-top:100%;
+        }
+        nav ul li a
+        {
+            color:aqua;
+            text-decoration:none;
+            padding:0px 90px;
+        }
+    </style>
+    <nav>
+        <ul>
+            <li><a href="Login.aspx">Login</a></li>
+            <li><a href="Reg.aspx">Register</a></li>
+           
+        </ul>
+    </nav>
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

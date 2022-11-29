@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="Honda.Admin.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+
+    <style>
+        nav
+        {
+            background-color:orangered;
+            height:70px;
+        }
+        nav ul{
+            text-align:center;
+        }
+        nav li{
+            display:inline;
+            margin-top:100%;
+        }
+        nav ul li a
+        {
+            color:aqua;
+            text-decoration:none;
+            padding:0px 40px;
+        }
+    </style>
+    <nav>
+        <ul>
+            <li><a href="AdminHome.aspx">Home Page</a></li>
+            <li><a href="Product.aspx">Product</a></li>
+            <li><a href="ViewUser.aspx">View Customers</a></li>
+            <li><a href="UserConfirm.aspx">Confirm User</a></li>
+            <li><a href="ViewComplaint.aspx">View Complaint</a></li>
+            <li><a href="ViewQuerry.aspx">View Querry</a></li>
+            <li><a href="../Guest/GuestHome.aspx">Logout</a></li>
+        </ul>
+    </nav>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+   
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
